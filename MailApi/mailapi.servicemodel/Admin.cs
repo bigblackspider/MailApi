@@ -1,32 +1,27 @@
-﻿using System.Collections.Generic;
-using System.Xml.Serialization;
-using ServiceStack;
+﻿using ServiceStack;
 
 namespace MailApi.ServiceModel
 {
     [Route("/domains", "GET")]
     [Route("/domains/{domainName}", "GET")]
-    public class domains : IReturn<DomainsResponse>
+    public class Domains : IReturn<object>
     {
         public string domainName { get; set; }
     }
 
-    public class DomainsResponse
-    {
-        public List<domains> Domains { get; set; }
-    }
-
     [Route("/domains/{domainName}/accounts", "GET")]
     [Route("/domains/{domainName}/accounts/{accountName}", "GET")]
-    public class Accounts : IReturn<AccountsResponse>
+    public class Accounts : IReturn<object>
     {
         public string domainName { get; set; }
         public string accountName { get; set; }
     }
 
-    public class AccountsResponse
+    [Route("/domains/{domainName}/aliases", "GET")]
+    [Route("/domains/{domainName}/aliases/{alaisName}", "GET")]
+    public class Aliases : IReturn<object>
     {
-        [return: XmlRoot(ElementName = "Accounts")]
-        public List<Accounts> Accounts { get; set; }
+        public string domainName { get; set; }
+        public string aliasName { get; set; }
     }
 }
