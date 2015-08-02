@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="MailApi/MailApi/MailApi.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MailApi.MailServer/Engine.cs">
+    <Files>
+      <File FileName="MailApi.Lib/Dto/Domain.cs" Line="2" Column="11" />
+      <File FileName="MailApi.Lib/Dto/Account.cs" Line="1" Column="19" />
+      <File FileName="MailApi.MailServer/Engine.cs" Line="64" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/peter/Projects/MailApi/MailApi/MailApi.ServiceInterface/MyServices.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
